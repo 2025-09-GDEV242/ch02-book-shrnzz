@@ -55,7 +55,13 @@ class Book
     
     //Mutator method for book reference number
     public void setRefNumber(String ref){
+        if (ref.length() >= 3){
         refNumber = ref;
+    } else {
+        refNumber = "zzz";
+        System.out.println("Error: Please enter at least 3 characters for 
+        reference number");
+    }
     }
     
     //Accessor method for book reference number
