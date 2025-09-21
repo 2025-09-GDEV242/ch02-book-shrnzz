@@ -65,7 +65,14 @@ class Book
     
     //Method to print book details 
     public void printDetails(){
+        String refPrint;
+        
+        if (refNumber.length() > 0){
+            refPrint = refNumber;
+        } else {
+            refPrint = "zzz";
+        }
         System.out.println("Title: " + title + ", Author: " + author + 
-        ", Pages: " + pages);
+        ", Pages: " + pages + ", Reference number: " + refPrint);
     }
 }
