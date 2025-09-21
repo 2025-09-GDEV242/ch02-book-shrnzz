@@ -33,4 +33,14 @@ class Book
     public String getTitle(){
         return title;
     }
+    
+    //Method to print author 
+    public void printAuthor(){
+        System.out.println("Author: " + author);
+    }
+    
+    //Method to print title
+    public void printTitle(){
+        System.out.println("Title: " + title);
+    }
 }
