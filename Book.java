@@ -50,4 +50,10 @@ class Book
     public int getPages(){
         return pages;
     }
+    
+    //Method to print book details 
+    public void printDetails(){
+        System.out.println("Title: " + title + ", Author: " + author + 
+        ", Pages: " + pages);
+    }
 }
