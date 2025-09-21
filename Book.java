@@ -14,18 +14,21 @@ class Book
     private int pages;
     private String refNumber;
     private int borrowed;
+    private final boolean courseText;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, 
+    boolean isCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
         borrowed = 0;
+        courseText = isCourseText;
     }
 
     // Add the methods here ...
@@ -78,6 +81,12 @@ class Book
     public int getBorrowed(){
         return borrowed;
     }
+    
+    //Accessor method for course text
+    public boolean isCourseText(){
+        return courseText;
+    }
+    
     //Method to print book details 
     public void printDetails(){
         String refPrint;
@@ -89,6 +98,6 @@ class Book
         }
         System.out.println("Title: " + title + ", Author: " + author + 
         ", Pages: " + pages + ", Reference number: " + refPrint + ", Borrowed: " 
-        + borrowed + " time(s)");
+        + borrowed + " time(s)" + ", Course text: " + courseText);
     }
 }
