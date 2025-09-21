@@ -59,8 +59,7 @@ class Book
         refNumber = ref;
     } else {
         refNumber = "zzz";
-        System.out.println("Error: Please enter at least 3 characters for 
-        reference number");
+        System.out.println("Error Please enter at least 3 charactersfor reference number");
     }
     }
     
